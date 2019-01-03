@@ -3,26 +3,26 @@
 
 let abrar;
 abrar = document;
-// abrar = document.all;
-// abrar = document.all[15];
-// abrar = document.head;
-// abrar = document.body;
-// abrar = document.all.length;
-// abrar = document.doctype;
-// abrar = document.domain;
-// abrar = document.URL;
-// abrar = document.contentType;
+abrar = document.all;
+abrar = document.all[15];
+abrar = document.head;
+abrar = document.body;
+abrar = document.all.length;
+abrar = document.doctype;
+abrar = document.domain;
+abrar = document.URL;
+abrar = document.contentType;
 console.log(abrar);
 
-// let head2 = document.querySelectorAll('h2'); // it will help us to find all h2 tags in the body
-// console.log(head2);
+let head2 = document.querySelectorAll('h2'); // it will help us to find all h2 tags in the body
+console.log(head2);
 
-// let contain = document.getElementsByClassName('container'); //all the classes using same name of container
-// console.log(contain);
-// let col = document.getElementsByClassName('col-md-4'); 
-// console.log(col);
+let contain = document.getElementsByClassName('container'); //all the classes using same name of container
+console.log(contain);
+let col = document.getElementsByClassName('col-md-4'); 
+console.log(col);
 
-// getElementById()
+//// getElementById()
 
 let waqar = document.getElementById('navbar-brand');
 waqar.textContent = 'MyLoGo';
@@ -35,11 +35,11 @@ button.style.color = 'black';
 button.textContent = 'click me';
 button.style.width = '12rem';
 
-// querySelectorAll
+//// querySelectorAll
 let hello = document.querySelectorAll('.container');
 hello[1].style.backgroundColor = 'yellow';
 
-// uerySelectorAll
+//// uerySelectorAll
 let world = document.getElementsByTagName('h1');
 
 world[0].style.color = 'red' 
@@ -68,7 +68,7 @@ heading[2].style.backgroundColor ='aqua'
 heading[2].style.fontWeight ='900';
 heading[2].style.fontSize ='20px';
 
-// querrySelectorAll
+//// querrySelectorAll
 
 
 let head = document.querySelectorAll('h2');
@@ -82,7 +82,7 @@ head[2].style.color ='orange';
 head[2].style.fontWeight ='900';
 head[2].textContent ='heading 3'
 
-// getElementsByClassName
+//// getElementsByClassName
 
 let btnn = document.getElementsByClassName('btn btn-default');
 
@@ -96,10 +96,10 @@ btnn[1].style.color='white';
 btnn[2].style.background='red';
 btnn[2].style.color='white';
 
-// querySelectorAll
+//// querySelectorAll
 
-// const items = document.querySelectorAll('p'); //if there is more than one p tags then we must use querySelectAll and define index for it
-// console.log(items);
+const items = document.querySelectorAll('p'); //if there is more than one p tags then we must use querySelectAll and define index for it
+console.log(items);
 
 let footer = document.querySelectorAll('p');
 footer[8].style.color ='white';
