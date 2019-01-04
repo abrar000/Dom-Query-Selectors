@@ -56,16 +56,21 @@ para[0].style.textAlign = 'center';
 
 const heading = document.getElementsByClassName('col-md-4');
 heading[0].style.color ='red'
-heading[0].style.textAlign ='center';
 heading[0].style.backgroundColor ='grey';
+// heading[0].style.fontWeight ='900'; 
+heading[0].style.fontSize ='20px';
 heading[0].style.fontWeight ='bold';
 heading[0].style.marginBottom ='10rem';
 heading[1].style.color ='blue';
 heading[1].style.marginBottom ='10rem'
+// heading[1].style.fontWeight ='900'; 
+heading[1].style.fontSize ='20px';
+heading[1].style.fontWeight ='bold';
 heading[1].style.backgroundColor ='yellow'
 heading[2].style.color ='green'
+heading[2].style.fontWeight ='bold';
 heading[2].style.backgroundColor ='aqua'
-heading[2].style.fontWeight ='900';
+// heading[2].style.fontWeight ='900'; 
 heading[2].style.fontSize ='20px';
 
 //// querrySelectorAll
@@ -88,7 +93,7 @@ let btnn = document.getElementsByClassName('btn btn-default');
 
 btnn[0].style.color = 'white';
 btnn[0].style.background = 'green';
-btnn[0].style.marginBottom = '2rem';
+// btnn[0].style.marginBottom = '2rem';
 btnn[0].style.border = 'none';
 btnn[0].style.letterSpacing = '5px';
 btnn[1].style.background='orange';
