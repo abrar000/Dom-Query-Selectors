@@ -44,3 +44,22 @@ aaa =abr.setAttribute('title', 'collection of items');
 console.log(abr);
 aaa =abr.hasAttribute('title', 'collections of items');
 console.log(aaa);
+
+
+let newLi = document.createElement('li');
+newLi.innerHTML = 'Hello, world!';
+collection.insertBefore(newLi, collection.children[1]);
+
+ul.before('hi');
+ul.after('bye');
+
+let prepend = document.createElement('li');
+prepend.innerHTML ='before';
+ul.prepend(prepend);
+prepend.style.color =''
+
+let append = document.createElement('li');
+append.innerHTML ="after"
+ul.append(append);
+append.style.color =''
+
