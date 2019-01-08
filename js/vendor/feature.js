@@ -63,3 +63,21 @@ append.innerHTML ="after"
 ul.append(append);
 append.style.color =''
 
+// add/remove items
+let i = 1;
+let add = document.getElementById('add').addEventListener('click', function onClick(){
+
+  let abr = document.createElement('li');
+  abr.textContent = "adding" +i;
+  i++;
+  collection.append(abr);
+});
+
+let remove = document.getElementById("remove").addEventListener('click', onClick);
+
+function onClick(){
+  document.querySelectorAll('ul');
+  ul .lastChild.remove();
+}
+
+
