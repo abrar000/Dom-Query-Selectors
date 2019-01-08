@@ -68,7 +68,7 @@ let i = 1;
 let add = document.getElementById('add').addEventListener('click', function onClick(){
 
   let abr = document.createElement('li');
-  abr.textContent = "adding" +i;
+  abr.textContent = "adding " +i;
   i++;
   collection.append(abr);
 });
