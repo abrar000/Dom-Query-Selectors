@@ -22,12 +22,33 @@ class Car {
         <td>${item[i].model}</td>
         <td>${item[i].year}</td>
         <td>${item[i].description}</td>
+        <td><button class="remove" value="${i}">X</td>
+      
         `;
         list.appendChild(row);
+        //  console.log(i);
       }
     }
     else{
       localStorage.setItem('cars', JSON.stringify([]));
+    }
+    
+    document.body.addEventListener('click',function(e){
+      if (e.target.className == "remove") {
+        removeItems();
+      } 
+    });
+
+    function removeItems(){
+      let storedVaue = JSON.parse(localStorage.getItem('cars'));
+      let removeBtn = document.querySelector('.remove');
+
+      removeBtn.parentElement.parentElement.remove();
+      for(let i=0;i<storedVaue.length;i++){
+          storedVaue.splice(i,1);
+          localStorage.setItem('cars',JSON.stringify([]));
+         break;
+      }
     }
 
   }
